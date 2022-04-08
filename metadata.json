@@ -1,0 +1,11 @@
+{                           
+  "description": "My first gnome extension",
+  "name": "simple-panel-button",
+  "shell-version": [
+    41.4
+  ],
+  "url": "",
+  "uuid": "simple-panel-button@taicout6.github.com",
+  "version": 1
+}
+
