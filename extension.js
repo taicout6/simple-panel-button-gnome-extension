@@ -1,7 +1,7 @@
-// const St = imports.gt.St;
-// const Main = imports.ui.main;
-import St from 'gt.St';
-import Main from 'ui.main';
+const St = imports.gt.St;
+const Main = imports.ui.main;
+// import St from 'gt.St';
+// import Main from 'ui.main';
 
 let panelButton, panelButtonText;
 
@@ -16,7 +16,11 @@ function init () {
   panelButton.set_child(panelButtonText);
 }
 
-function enable() {}
+function enable() {
+  Main.panel._rightBox.insert_child_at_index(panelButton, 1);
+}
 
-function disable() {}
+function disable() {
+  Main.panel._rightBox.remove_child(panelButton);
+}
 
