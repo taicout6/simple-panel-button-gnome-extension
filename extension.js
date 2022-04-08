@@ -5,7 +5,16 @@ import Main from 'ui.main';
 
 let panelButton, panelButtonText;
 
-function init () {}
+function init () {
+  panelButton = new St.Bin({
+    style_class: "panel-button"
+  });
+  panelButtonText = new St.Label({
+    style_class: "panel-text",
+    text: "Starting..."
+  });
+  panelButton.set_child(panelButtonText);
+}
 
 function enable() {}
 
